@@ -2,26 +2,23 @@
 
 let nb = parseInt(prompt("Donne-moi un nombre"))
 
-// switch (true) {
-//     case (nb%2 == 0):
-//         alert("Ce nombre est pair")
-//         break;
-
-//     default:
-//         alert("Ce nombre est impair")
-//         break;
-// }
-
-switch (nb%2 == 0) {
-    case (true):
-        alert("Ce nombre est pair")
+switch (isNaN(nb)) {
+    case true:
+        alert("Error - NaN")
         break;
-    case (false):
-        alert("Ce nombre est impair")
-        break;
-
+    case false:
+        switch (nb%2 == 0) {
+            case (true):
+                alert("Ce nombre est pair")
+                break;
+            case (false):
+                alert("Ce nombre est impair")
+                break;
+            default:
+                alert("error")
+                break;
+        }
     default:
-        alert("error")
         break;
 }
 
