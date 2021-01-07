@@ -1,6 +1,6 @@
 // EXO 1
 
-// let nb = prompt("Donne-moi un nombre")
+let nb = parseInt(prompt("Donne-moi un nombre"))
 
 // switch (true) {
 //     case (nb%2 == 0):
@@ -11,6 +11,19 @@
 //         alert("Ce nombre est impair")
 //         break;
 // }
+
+switch (nb%2 == 0) {
+    case (true):
+        alert("Ce nombre est pair")
+        break;
+    case (false):
+        alert("Ce nombre est impair")
+        break;
+
+    default:
+        alert("error")
+        break;
+}
 
 // EXO 2
 
