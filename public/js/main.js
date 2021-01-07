@@ -1,26 +1,26 @@
 // EXO 1
 
-let nb = parseInt(prompt("Donne-moi un nombre"))
+// let nb = parseInt(prompt("Donne-moi un nombre"))
 
-switch (isNaN(nb)) {
-    case true:
-        alert("Error - NaN")
-        break;
-    case false:
-        switch (nb%2 == 0) {
-            case (true):
-                alert("Ce nombre est pair")
-                break;
-            case (false):
-                alert("Ce nombre est impair")
-                break;
-            default:
-                alert("error")
-                break;
-        }
-    default:
-        break;
-}
+// switch (isNaN(nb)) {
+//     case true:
+//         alert("Error - NaN")
+//         break;
+//     case false:
+//         switch (nb%2 == 0) {
+//             case (true):
+//                 alert("Ce nombre est pair")
+//                 break;
+//             case (false):
+//                 alert("Ce nombre est impair")
+//                 break;
+//             default:
+//                 alert("error")
+//                 break;
+//         }
+//     default:
+//         break;
+// }
 
 // EXO 2
 
@@ -63,7 +63,6 @@ switch (douze) {
     case "12":
         alert("Décembre")
         break;
-
     default:
         alert("Entre 1 et 12 on a dit ...")
         break;
